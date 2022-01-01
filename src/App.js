@@ -10,7 +10,7 @@ function App() {
       age: "",
       email: "",
       hobby: [],
-      gender: ""
+      gender: "",
     },
     validationSchema: Yup.object({
       text: Yup.string()
@@ -37,103 +37,138 @@ function App() {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="text">First Name</label>
-      <input
-        id="text"
-        name="text"
-        type="text"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.text}
-      />
-      {formik.touched.text && formik.errors.text ? (
-        <div>{formik.errors.text}</div>
-      ) : null}
-      <br />
-      <label htmlFor="age">Last Name</label>
-      <input
-        id="age"
-        name="age"
-        type="number"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.age}
-      />
-      {formik.touched.age && formik.errors.age ? (
-        <div>{formik.errors.age}</div>
-      ) : null}
-
-      <br />
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.email}
-      />
-      {formik.touched.email && formik.errors.email ? (
-        <div>{formik.errors.email}</div>
-      ) : null}
-      <br />
-      <label> School </label>
-      <input
-        type="checkbox"
-        value="School"
-        checked={formik.values.hobby.includes("School")}
-        name="hobby"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-      />
-      <br />
-      <label> UG </label>
-      <input
-        type="checkbox"
-        value="UG"
-        checked={formik.values.hobby.includes("UG")}
-        name="hobby"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-      />
-      <br />
-      <label> PG </label>
-      <input
-        type="checkbox"
-        value="PG"
-        checked={formik.values.hobby.includes("PG")}
-        name="hobby"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-      />
+      <div className="title">
+        <h1 className="title_login_page">Login Page</h1>
+      </div>
+      <div className="input_text_div">
+        <div className="input_text_design">
+          <label htmlFor="text">First Name</label>
+          <br />
+          <input
+            id="text"
+            name="text"
+            type="text"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.text}
+          />
+          {formik.touched.text && formik.errors.text ? (
+            <div className="text_danger">{formik.errors.text}</div>
+          ) : null}
+        </div>
+        <br />
+        <div className="input_text_design">
+          <label htmlFor="age">Last Name</label>
+          <br />
+          <input
+            id="age"
+            name="age"
+            type="number"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.age}
+          />
+          {formik.touched.age && formik.errors.age ? (
+            <div className="text_danger">{formik.errors.age}</div>
+          ) : null}
+        </div>
+        <br />
+        <div className="input_text_design">
+          <label htmlFor="email">Email Address</label>
+          <br />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
+          />
+          {formik.touched.email && formik.errors.email ? (
+            <div className="text_danger">{formik.errors.email}</div>
+          ) : null}
+        </div>
+        <br />
+      </div>
+      <h3 style={{ marginTop: "10px", marginBottom: "0", marginLeft: "90px" }}>
+        Hobby :
+      </h3>
+      <div className="input_checkbox_div">
+        <div className="input_checkbox_design">
+          <label> School </label>
+          <input
+            type="checkbox"
+            value="School"
+            checked={formik.values.hobby.includes("School")}
+            name="hobby"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+        </div>
+        <div className="input_checkbox_design">
+          <label> UG </label>
+          <input
+            type="checkbox"
+            value="UG"
+            checked={formik.values.hobby.includes("UG")}
+            name="hobby"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+        </div>
+        <div className="input_checkbox_design">
+          <label> PG </label>
+          <input
+            type="checkbox"
+            value="PG"
+            checked={formik.values.hobby.includes("PG")}
+            name="hobby"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+        </div>
+        <br />
+      </div>
       {formik.touched.hobby && formik.errors.hobby ? (
-        <div>{formik.errors.hobby}</div>
+        <div className="input_checkbox_design text_danger" style={{ marginTop: "5px" }}>
+          {formik.errors.hobby}
+        </div>
       ) : null}
-      <br />
-      <label> Male </label>
-      <input
-        type="radio"
-        value="male"
-        name="gender"
-        checked={formik.values.gender === "male"}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-      />
-      <br />
-      <label> Female </label>
-      <input
-        type="radio"
-        value="female"
-        name="gender"
-        checked={formik.values.gender === "female"}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-      />
+      <h3 style={{ marginTop: "20px", marginBottom: "0", marginLeft: "90px" }}>
+        Gender :
+      </h3>
+      <div className="input_radio_div">
+        <div className="input_radio_design">
+          <label> Male </label>
+          <input
+            type="radio"
+            value="male"
+            name="gender"
+            checked={formik.values.gender === "male"}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+        </div>
+        <div className="input_radio_design">
+          <label> Female </label>
+          <input
+            type="radio"
+            value="female"
+            name="gender"
+            checked={formik.values.gender === "female"}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+        </div>
+      </div>
       {formik.touched.gender && formik.errors.gender ? (
-        <div>{formik.errors.gender}</div>
+        <div style={{ marginTop: "5px", marginLeft: "90px" ,color: "red" }}>
+          {formik.errors.gender}
+        </div>
       ) : null}
-      <br />
-      <button type="submit">Submit</button>
+      <div className="submit_button">
+        <button type="submit" className="submit_handler">Submit</button>
+      </div>
     </form>
   );
 }

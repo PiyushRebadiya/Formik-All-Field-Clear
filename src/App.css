@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+form {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  left: 31%;
+  background: white;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(33 150 243 / 70%));
+}
+
+.title_login_page {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  font-family: cursive;
+  color:crimson;
+}
+
+.title {
+  text-align: center;
+}
+
+.input_text_design {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+label {
+  color: #0f1010c7;
+  font-size: larger;
+}
+
+.input_text_design > input {
+  border: 1px solid #0e0f109e;
+  width: -webkit-fill-available;
+  height: 25px;
+  border-radius: 5px;
+}
+.input_text_design > input:focus-visible {
+  outline: none;
+}
+
+.input_checkbox_div {
+  display: flex;
+}
+
+.input_checkbox_design {
+  margin-left: 90px;
+}
+
+.input_radio_div {
+  display: flex;
+}
+.input_radio_design {
+  margin-left: 90px;
+}
+
+.submit_button {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.submit_handler {
+  width: 90px;
+  height: 35px;
+  background: #2196f3;
+  border-radius: 5px;
+  color: #fff;
+  border:none;
+}
+
+.submit_handler:hover {
+  background: #fff;
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.text_danger {
+  color: red;
+}
