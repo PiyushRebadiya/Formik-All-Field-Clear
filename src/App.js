@@ -17,7 +17,7 @@ function App() {
         .max(5, "Must be 5 characters or less")
         .required("Required"),
       age: Yup.number()
-        .max(100, "Must be 3 characters")
+        .max(100, "Must be 2 characters")
         .typeError("That doesn't look like a phone number")
         .positive("A phone number can't start with a minus")
         .integer("A phone number can't include a decimal point")
@@ -58,7 +58,7 @@ function App() {
         </div>
         <br />
         <div className="input_text_design">
-          <label htmlFor="age">Last Name</label>
+          <label htmlFor="age">age</label>
           <br />
           <input
             id="age"
@@ -90,7 +90,7 @@ function App() {
         </div>
         <br />
       </div>
-      <h3 style={{ marginTop: "10px", marginBottom: "0", marginLeft: "90px" }}>
+      <h3 className="h3_hobby">
         Hobby :
       </h3>
       <div className="input_checkbox_div">
@@ -134,7 +134,7 @@ function App() {
           {formik.errors.hobby}
         </div>
       ) : null}
-      <h3 style={{ marginTop: "20px", marginBottom: "0", marginLeft: "90px" }}>
+      <h3 className="h3_gender">
         Gender :
       </h3>
       <div className="input_radio_div">
