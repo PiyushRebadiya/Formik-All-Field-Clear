@@ -46,7 +46,11 @@ form {
   background: white;
   border-radius: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(33 150 243 / 70%));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(33 150 243 / 70%)
+  );
 }
 
 .title_login_page {
@@ -54,7 +58,7 @@ form {
   margin-bottom: 0;
   padding: 10px;
   font-family: cursive;
-  color:crimson;
+  color: crimson;
 }
 
 .title {
@@ -108,7 +112,7 @@ label {
   background: #2196f3;
   border-radius: 5px;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .submit_handler:hover {
@@ -121,8 +125,177 @@ label {
   color: red;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+.h3_hobby {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 90px;
+}
+
+.h3_gender {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 90px;
+}
+
+@media  (min-width: 1px)and (max-width: 360px) {
+  form {
+    width: 360px;
+    left: 0;
+    top: 15%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgb(33 150 243 / 70%)
+    );
+  }
+
+  .input_text_design {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .input_checkbox_design {
+    margin-left: 57px;
+  }
+
+  .input_radio_design {
+    margin-left: 60px;
+  }
+
+  .h3_hobby {
+    margin-left: 60px;
+  }
+  
+  .h3_gender {
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 376px) {
+  form {
+    width: 375px;
+    left: 0%;
+    top: 15%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgb(33 150 243 / 70%)
+    );
+  }
+
+  .input_text_design {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .input_checkbox_design {
+    margin-left: 57px;
+  }
+
+  .input_radio_design {
+    margin-left: 60px;
+  }
+
+  .h3_hobby {
+    margin-left: 60px;
+  }
+  
+  .h3_gender {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 377px) and (max-width: 415px) {
+  form {
+    width: 377px;
+    left: 4%;
+    top: 15%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgb(33 150 243 / 70%)
+    );
+  }
+
+  .input_text_design {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .input_checkbox_design {
+    margin-left: 57px;
+  }
+
+  .input_radio_design {
+    margin-left: 60px;
+  }
+
+  .h3_hobby {
+    margin-left: 60px;
+  }
+  
+  .h3_gender {
+    margin-left: 60px;
+  }
+}
+ @media (min-width: 416px) and (max-width: 542px) {
+  form {
+    width: 430px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background: white;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgb(33 150 243 / 70%)
+    );
+  }
+}  
+ @media (min-width: 544px) and (max-width: 770px) {
+  form {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: white;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgb(33 150 243 / 70%)
+    );
+  }
+}  
+ @media (min-width: 771px) and (max-width: 1025px) {
+  form {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    background: white;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-image: linear-gradient( to right, rgba(255, 0, 0, 0), rgb(33 150 243 / 70%) );
+}
+}  

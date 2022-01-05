@@ -8,9 +8,33 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 969px;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (min-width: 1px) and (max-width: 360px) {
+  body {
+    height: 830px;
+  }
+}
+
+@media (min-width: 361px)and (max-width: 415px) {
+  body {
+    height: 823px;
+  }
+}
+@media (min-width: 416px)and (max-width: 770px) {
+  body {
+    height: 1024px;
+  }
+}
+@media (min-width: 771px)and (max-width: 1025px) {
+  body {
+    height: 900px;
+  }
+}
+
